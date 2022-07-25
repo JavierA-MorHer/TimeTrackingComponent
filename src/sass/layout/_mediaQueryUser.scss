@@ -4,8 +4,7 @@
 @include phone{
 
     .container{
-        display: flex;
-        flex-direction: column;
+        display: block;        
     }
 
     .bg-user{

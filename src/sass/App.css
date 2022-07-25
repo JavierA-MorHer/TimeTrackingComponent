@@ -503,8 +503,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
   .bg-user {
     display: flex;
@@ -535,12 +534,6 @@ template {
   }
 }
 @media (max-width: 768px) {
-  .container {
-    width: 90vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   .container .layout {
     display: block;
     padding: 0;
