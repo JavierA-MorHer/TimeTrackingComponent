@@ -537,7 +537,9 @@ template {
 @media (max-width: 768px) {
   .container {
     width: 90vw;
-    height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .container .layout {
     display: block;

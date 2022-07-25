@@ -5,7 +5,7 @@
 @include phone{
     .container{
         width: 90vw;
-        height: 100vh;
+        height: fit-content;
 
         .layout{
             display: block;
