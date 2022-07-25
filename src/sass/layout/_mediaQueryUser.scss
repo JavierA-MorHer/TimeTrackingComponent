@@ -1,0 +1,43 @@
+@import '../abstract/variables';
+@import '../mixins/mediaQuery';
+
+@include phone{
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-user{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90vw;
+            justify-content: center;
+
+            .user{
+                width: 100%;
+                height: 120px;
+                display: flex;
+
+                .report{
+                   padding: 0;
+                   margin-left: 100px;
+                   margin-top: 22px;
+                   margin-top: 22px;
+                   margin-bottom: 22px;
+                }
+            }
+        }
+
+        .list{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+        }
+
+        .item{
+            font-size: 20px;
+            
+        }
+}

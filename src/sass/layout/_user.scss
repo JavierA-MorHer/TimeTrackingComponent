@@ -1,0 +1,65 @@
+@import "../abstract/variables";
+
+.bg-user {
+  background-color: $Dark-blue;
+  width: 200px;
+  border-radius: 13px;
+  margin: 0;
+
+  .user {
+    position: relative;
+    display: flex;
+
+    
+    .report {
+      padding-top: 115px;
+      margin-left: 30px;
+    }
+
+    .title-user{
+        font-size: 15px;
+        color: $Pale-Blue;
+        font-weight: $ligth;
+    }
+
+    .name{
+        font-size: 30px;
+        font-weight: $ligth;
+    }
+  }
+}
+
+.img-avatar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid $white;
+}
+
+.list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  list-style-type: none;
+  font-size: 16px;
+  margin-bottom: 19px;
+  font-weight: $ligth;
+  color: $Pale-Blue;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.selected {
+  color: $white;
+}

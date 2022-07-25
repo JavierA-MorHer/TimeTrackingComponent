@@ -1,0 +1,105 @@
+@import '../abstract/variables';
+
+.bg{
+    width: 200px;
+    height: 180px;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 30px;
+
+    .card{
+        width: 100%;
+        height: 150px;
+        background-color: $Dark-blue;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        z-index: 2;
+
+        .title{
+            display: flex;
+            font-size: 15px;
+            justify-content: space-between;
+        }
+
+        .description{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .hours{
+                font-size: 40px;
+                font-weight: $ligth;
+                margin-bottom: 10px;
+            }
+
+            .last{
+                font-size: 12px;
+                color: $Pale-Blue;
+            }
+        }
+    
+        &:hover{
+            background-color: $Desaturated-blue;  
+        }  
+
+        .text{
+            width: fit-content;
+            height: min-content;    
+        }
+
+        .options{
+            width: 10px;
+            height: min-content;
+            transition: .2s ease-in-out;
+        }
+       .options:hover{
+        letter-spacing: 2px;
+       }            
+    }  
+
+    .icon{
+        position: absolute;
+        width: 60px;
+        left: 65%;
+        
+    }
+}
+
+
+.work{
+    background-color: $Light-red-work;
+    margin-right: 10px;
+}
+
+.play{
+    background-color: $Soft-blue-play;
+    margin-right: 10px;
+}
+
+.study{
+    background-color: $Light-red-study;
+}
+
+.social{
+    background-color: $Violet-social;
+}
+
+.exercise{
+    background-color: $Lime-green-exercise;
+}
+
+.self-care{
+    background-color: $Soft-orange-self-care;
+}
+
+
+
+
+

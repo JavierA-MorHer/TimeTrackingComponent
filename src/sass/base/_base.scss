@@ -1,0 +1,21 @@
+@import '../abstract/variables';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: $Very-dark-blue;
+    width: 100vw;
+    height: 100vh;
+    font-family: $font;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size;
+  }

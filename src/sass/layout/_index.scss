@@ -1,0 +1,28 @@
+@import '../abstract/variables';
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 55vh;
+    
+
+    .user{
+        background-color: $Blue;
+        border-radius: 13px;
+        height: 65%;
+    }
+
+    .layout{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        align-items: center;
+        margin-left: 30px;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+}
+
+
+

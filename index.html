@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/sass/App.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Time tracking Component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-user">
+        <div class="user">
+          <div class="avatar">
+            <img
+              class="img-avatar"
+              src="./src/img/image-jeremy.png"
+              alt="user avatar"
+            />
+          </div>
+          <div class="report">
+            <div class="user-info">
+              <span class="title-user">Report for</span>
+              <div><span class="name">Jeremy Robson</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="list">
+          <span id="daily" class="item">Daily</span>
+          <span id="weekly" class="item">Weekly</span>
+          <span id="monthly" class="item">Monthly</span>
+        </div>
+      </div>
+
+      <div class="layout">
+        <!-- Work -->
+        <div class="bg work">
+          <div class="img">
+            <img class="icon" src="./src/img/icon-work.svg" alt="icon work" />
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <div class="text">Work</div>
+              <small class="options">...</small>
+            </div>
+
+            <div class="description">
+              <span class="hours"><span id="work-hours"></span></span>
+              <span class="last"><span id="work-last"></span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End work -->
+
+        <!-- Play -->
+        <div class="bg play">
+          <div class="img">
+            <img class="icon" src="./src/img/icon-play.svg" alt="icon play" />
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <div class="text">Play</div>
+              <small class="options">...</small>
+            </div>
+
+            <div class="description">
+              <span class="hours"><span id="play-hours"></span></span>
+              <span class="last"><span id="play-last"></span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Play -->
+
+        <!-- Study -->
+        <div class="bg study">
+          <div class="img">
+            <img class="icon" src="./src/img/icon-study.svg" alt="icon study" />
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <div class="text">Study</div>
+              <small class="options">...</small>
+            </div>
+
+            <div class="description">
+              <span class="hours"><span id="study-hours"></span></span>
+              <span class="last"><span id="study-last"></span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End study -->
+
+        <!-- Exercise -->
+        <div class="bg exercise">
+          <div class="img">
+            <img
+              class="icon"
+              src="./src/img/icon-exercise.svg"
+              alt="icon exercise"
+            />
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <div class="text">Exercise</div>
+              <small class="options">...</small>
+            </div>
+
+            <div class="description">
+              <span class="hours"><span id="exercise-hours"></span></span>
+              <span class="last"><span id="exercise-last"></span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Exercise -->
+
+        <!-- Social -->
+        <div class="bg social">
+          <div class="img">
+            <img
+              class="icon"
+              src="./src/img/icon-social.svg"
+              alt="icon social"
+            />
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <div class="text">Social</div>
+              <small class="options">...</small>
+            </div>
+
+            <div class="description">
+              <span class="hours"><span id="social-hours"></span></span>
+              <span class="last"><span id="social-last"></span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End social -->
+
+        <!-- Self Care -->
+        <div class="bg self-care">
+          <div class="img">
+            <img
+              class="icon"
+              src="./src/img/icon-self-care.svg"
+              alt="icon self-care"
+            />
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <div class="text">Self Care</div>
+              <small class="options">...</small>
+            </div>
+
+            <div class="description">
+              <span class="hours"><span id="self-hours"></span></span>
+              <span class="last"><span id="self-last"></span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Self Care -->
+      </div>
+    </div>
+  </body>
+  <script src="./src/js/api.js"></script>
+</html>
